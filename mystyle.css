@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: 'Amatic SC'
+}
+
+
+h1 {
+  font-size: 5em;
+  color: #000;
+}
+
+@media screen and (max-width: 360px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  .socialIcons li a {
+    font-size: 3rem;
+  }
+}
+
+h2 {
+  font-size: 3em;
+  color: #000;
+}
+
+p {
+  font-size: 1.8em;
+  color: #000;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.content {
+  text-align: center;
+  margin: 0 auto;
+  top: 50%;
+  transform: translate(0 -50%);
+  z-index: 1;
+}
+
+.socialIcons {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline-block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  height: 90px;
+  text-align: center;
+}
+
+.socialIcons li {
+  display: inline-block;
+  margin: auto 10px;
+}
+
+.socialIcons li a {
+  text-align: center;
+  display: inline-block;
+  font-size: 4rem;
+  height: 100px;
+  width: 100px;
+  line-height: 100px;
+  color: #000;
+  transition: all .5s ease;
+  transform-origin: left;
+  transform: rotateY(-30deg);
+  text-shadow: 10px 0px 1px #c4c4c4
+}
+
+.socialIcons li a:hover {
+  color: #202020;
+  transform: rotate(0deg);
+  text-shadow: 0px 0px 1px #131313, 0px 0px 1px #070707, 0px 0px 1px black, 0px 0px 1px black;
+}
